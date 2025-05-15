@@ -1,55 +1,116 @@
 body {
-    font-family: "Roboto", sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-    height: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 header a {
-    text-decoration: none;
-    color: #003366;
+  text-decoration: none;
+  color: #1b357e;
 }
 
 header #imagem_header {
-    position: absolute;
-    left: 2rem;
+  position: absolute;
+  left: 2rem;
 }
 
 header #imagem_header img {
-    width: 65%;
+  width: 50%;
 }
 
 header nav {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 main {
-    flex: 1;
+  flex: 1;
 }
 
 footer {
-    display: flex;
-    align-items: center;
-    padding: 8px;
-    background-color: #003366;
-    justify-content: space-between;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background-color: #1b357e;
+  justify-content: space-between;
 }
 
 footer nav {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .texto-footer {
-    font-size: 20px;
-    color: white;
+  font-size: 14px;
+  color: white;
+}
+
+.rede-social {
+  width: 30px;
+  height: 30px;
+}
+
+.redes-sociais {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.copyright {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  header #imagem_header {
+    position: static;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer nav {
+    display: flex;
+  }
+
+  .redes-sociais {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .copyright {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+
+    margin-bottom: 1rem;
+  }
+
+  .logo-ford {
+    position: static;
+  }
 }

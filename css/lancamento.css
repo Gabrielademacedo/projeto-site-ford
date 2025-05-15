@@ -1,54 +1,77 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .tabela {
-    width: 100%;
-    margin-bottom: 1rem;
+  margin-top: 4rem;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 .tabela tr {
-    gap: 4rem;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
 }
 
 .tabela tr td {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modelos-carros {
+  width: 90%;
 }
 
 .carro-informacoes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
 
 .carro-informacoes img {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .carro-informacoes input {
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
 }
 
 .botao {
-    display: flex;
-    justify-content: center;
-    margin: 16px;
+  display: flex;
+  justify-content: center;
+  margin: 16px;
 }
 .botao button {
-    color: #fff;
-    width: 200px;
-    height: 40px;
-    background-color: #1351d8;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s;
+  color: #fff;
+  width: 200px;
+  height: 40px;
+  background-color: #1351d8;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 .botao button:hover {
-    transform: scale(1.1);
-    filter: brightness(0.8);
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
+@media (max-width: 768px) {
+  .tabela tr {
+    flex-direction: column;
+  }
+
+  .modelos-carros {
+    width: 60%;
+  }
 }

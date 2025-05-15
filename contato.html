@@ -21,8 +21,9 @@
         </header>
 
         <main>
+            <h1 class="main-titulo">Entre Em Contato Conosco</h1>
             <div class="container">
-                <img src="img/XL Cabine.jpg" alt="carro cabine" />
+                <img src="img/XL Cabine.jpg" alt="carro cabine" class="imagem-carro"/>
                 <form class="formulario">
                     <input type="nome" name="nome" id="nome" placeholder="Nome:" required />
 
@@ -30,8 +31,8 @@
 
                     <input type="tel" name="tel" id="tel" placeholder="Telefone:" required />
 
-                    <select>
-                        <option value="" selected hidden disabled>Contato:</option>
+                    <select class="formulario-select" required>
+                        <option value="" disabled selected hidden >Motivo do contato</option>
                         <option value="1">Elogio</option>
                         <option value="2">Dúvida</option>
                         <option value="3">Reclamação</option>
@@ -44,19 +45,35 @@
         </main>
 
         <footer>
-            <nav>
-                <p class="texto-footer">Redes Socias</p>
+            <div class="redes-sociais">
+              <p class="texto-footer">Redes Socias</p>
+              <nav>
                 <a href="https://www.facebook.com/FordBrasil/" target="_blank">
-                    <img class="rede-social" src="img/facebook-50.png" alt="Facebook" />
+                  <img class="rede-social" src="img/facebook-50.png" alt="Facebook" />
                 </a>
-                <a href="https://www.youtube.com/fordbrasil" target="blank"><img src="img/youtube-squared-50.png" alt="Youtube" /></a>
+                <a href="https://www.youtube.com/fordbrasil" target="blank">
+                  <img
+                    class="rede-social"
+                    src="img/youtube-squared-50.png"
+                    alt="Youtube"
+                  />
+                </a>
                 <a href="https://www.instagram.com/fordbrasil/" target="_blank">
-                    <img class="rede-social" src="img/instagram-logo-50.png" alt="Instagram" />
+                  <img
+                    class="rede-social"
+                    src="img/instagram-logo-50.png"
+                    alt="Instagram"
+                  />
                 </a>
-            </nav>
-            <a href="Index.html" target="_blank">
-                <img class="logo-ford-96" src="img/ford-96.png" alt="logo ford" />
+              </nav>
+            </div>
+      
+            <a class="copyright" href="https://www.ford.com.br/copyright/"
+              >Copyright © 2025 Ford Motor Company - Todos os direitos reservados</a
+            >
+            <a class="logo-ford" href="Index.html" target="_blank">
+              <img src="img/ford-96.png" alt="logo ford" />
             </a>
-        </footer>
+          </footer>
     </body>
 </html>

@@ -1,9 +1,17 @@
 .conteudo-principal {
-    padding: 10px;
-    text-align: center;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
 }
 
 .imagem-princial {
-    width: 70%;
-    border-radius: 1%;
+  width: 70%;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .imagem-princial {
+    width: 90%;
+    border-radius: 10px;
+  }
 }
