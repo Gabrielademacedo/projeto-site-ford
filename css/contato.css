@@ -1,0 +1,38 @@
+.container {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+}
+
+.formulario input,
+.formulario select {
+    width: 280px;
+    height: 40px;
+    padding: 0.6rem;
+}
+
+.formulario textarea {
+    font-family: "Roboto", sans-serif;
+    width: 280px;
+    padding: 0.6rem;
+    height: 120px;
+}
+
+.botao {
+    background: #003366;
+    width: 169px;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}

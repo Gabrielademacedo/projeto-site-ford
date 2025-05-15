@@ -1,0 +1,55 @@
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+    color: #003366;
+}
+
+header #imagem_header {
+    position: absolute;
+    left: 2rem;
+}
+
+header #imagem_header img {
+    width: 65%;
+}
+
+header nav {
+    display: flex;
+    gap: 30px;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background-color: #003366;
+    justify-content: space-between;
+}
+
+footer nav {
+    display: flex;
+    align-items: center;
+}
+
+.texto-footer {
+    font-size: 20px;
+    color: white;
+}
